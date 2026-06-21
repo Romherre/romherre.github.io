@@ -1,0 +1,653 @@
+/* =========================
+   VARIABLES UX – PASTEL
+========================= */
+:root {
+  --lila-main: #8b5cf6;
+  --lila-soft: #ede9fe;
+
+  --lima-main: #7CFF00;
+  --lima-soft: #ecfccb;
+
+  --bg-main: #ffffff;
+  --bg-soft: #f9fafb;
+
+  --text-main: #0f172a;
+  --text-muted: #334155;
+
+  --border-soft: rgba(15, 23, 42, 0.08);
+
+  --radius-lg: 22px;
+  --radius-md: 16px;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.12);
+
+  --font-main: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+
+body {
+  font-family: var(--font-main);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-main);
+}
+
+p {
+  font-family: var(--font-main);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #1f2937
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+.small-text,
+.footer-left p,
+.footer-bottom-premium p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.nav-link,
+.btn,
+.contact-input,
+.contact-textarea {
+  font-size: 0.95rem;
+}
+
+
+/* =========================
+   HEADINGS – SISTEMA EDITORIAL
+========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-main);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text-main);
+  line-height: 1.1;
+}
+
+/* H1 – HERO */
+h1 {
+  font-size: clamp(3rem, 6vw, 4rem);
+}
+
+/* H2 – SECCIONES (estilo ¿Charlamos?) */
+h2 {
+  font-size: clamp(2.8rem, 5vw, 3.5rem);
+  margin-bottom: 2rem;
+}
+
+/* H3 */
+h3 {
+  font-size: 1.6rem;
+}
+
+/* H4 */
+h4 {
+  font-size: 1.25rem;
+}
+
+
+/* =========================
+   NAVBAR BLANCA UX
+========================= */
+
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-soft);
+  padding: 0.75rem 0;
+}
+
+.navbar .navbar-brand {
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  color: var(--text-main);
+  position: relative;
+}
+
+.navbar .nav-link:hover {
+  color: var(--lila-main);
+}
+
+/* underline sutil UX */
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--lila-main);
+  transition: width 0.25s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar .btn {
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.45rem 1.2rem;
+}
+
+
+/* =========================
+   HERO UX (PASTEL)
+========================= */
+.hero {
+  background: linear-gradient(135deg,
+      #e9d5ff 0%,
+      /* lila pastel */
+      #d8b4fe 45%,
+      /* lila medio */
+      #c7d2fe 100%
+      /* toque frío elegante */
+    );
+  color: #111827;
+  /* texto oscuro (mejor contraste) */
+}
+
+
+.hero h1 {
+  color: #111827;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+
+.hero .subtitle {
+  color: #374151;
+}
+
+
+/* =========================
+   AVATAR UX
+========================= */
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 6px solid #ffffff;
+  box-shadow: var(--shadow-soft);
+}
+
+/* =========================
+   BADGES / ROLES UX
+========================= */
+.badge-role {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  background: rgba(139, 92, 246, 0.12);
+  color: var(--text-main);
+
+  border-radius: 999px;
+  padding: 0.4rem 0.75rem;
+}
+
+/* =========================
+   BOTONES UX
+========================= */
+.btn-primary {
+  background-color: #7CFF00;
+  /* verde lima */
+  border-color: #7CFF00;
+  color: #111827;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+  background-color: #6be600;
+  border-color: #6be600;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(124, 255, 0, 0.35);
+}
+
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(17, 24, 39, 0.25);
+  color: #111827;
+  border-radius: 999px;
+  padding: 0.7rem 1.4rem;
+  transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(17, 24, 39, 0.05);
+}
+
+/* =========================
+   CARDS UX (CLAVE)
+========================= */
+.card,
+.mini-card {
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-body,
+.mini-card {
+  padding: 1.75rem !important;
+}
+
+.card:hover,
+.mini-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   CARDS DE CERTIFICACIONES (acento lima)
+========================= */
+#certificaciones .card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+#certificaciones .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--lima-main);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+#certificaciones .card:hover::before {
+  transform: scaleX(1);
+}
+
+#certificaciones .card:hover {
+  border-color: rgba(124, 255, 0, 0.4);
+  box-shadow: 0 20px 45px rgba(124, 255, 0, 0.18), 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+#certificaciones .card-title {
+  transition: color 0.25s ease;
+}
+
+#certificaciones .card:hover .card-title {
+  color: var(--lila-main);
+}
+
+#certificaciones .card .badge {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+#certificaciones .card:hover .badge {
+  background-color: rgba(124, 255, 0, 0.18) !important;
+  color: #14532d !important;
+}
+
+/* =========================
+   CARDS DE FORMACIÓN (acento lila)
+========================= */
+#formacion .card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+#formacion .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--lila-main);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+#formacion .card:hover::before {
+  transform: scaleX(1);
+}
+
+#formacion .card:hover {
+  border-color: rgba(139, 92, 246, 0.4);
+  box-shadow: 0 20px 45px rgba(139, 92, 246, 0.18), 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+#formacion .card h5 {
+  transition: color 0.25s ease;
+}
+
+#formacion .card:hover h5 {
+  color: var(--lila-main);
+}
+
+/* =========================
+   CARDS DE PROYECTOS
+========================= */
+.project-card {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.project-img {
+  height: 190px;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
+}
+
+/* =========================
+   CONTACTO UX
+========================= */
+.contact-card {
+  background: linear-gradient(135deg,
+      #ffffff,
+      var(--lila-soft));
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.contact-card .form-control {
+  border-radius: 14px;
+  border: 1px solid var(--border-soft);
+}
+
+.contact-card .form-control:focus {
+  border-color: var(--lila-main);
+  box-shadow: 0 0 0 0.15rem rgba(139, 92, 246, .25);
+}
+
+
+/* =========================
+   SECCIONES CON FONDO LILA
+========================= */
+.section-lila {
+  background: linear-gradient(135deg,
+      #e9d5ff 0%,
+      #d8b4fe 45%,
+      #c7d2fe 100%);
+}
+
+/* =========================
+   CONTACT PREMIUM
+========================= */
+
+.contact-premium {
+  background: linear-gradient(135deg,
+      #e9d5ff 0%,
+      #d8b4fe 45%,
+      #c7d2fe 100%);
+  padding: 8rem 0 4rem;
+}
+
+
+
+.contact-text {
+  font-size: 1.1rem;
+  color: #475569;
+  max-width: 420px;
+  margin-bottom: 2rem;
+}
+
+.contact-mail {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--text-main);
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+
+.contact-mail:hover {
+  color: var(--lila-main);
+  text-decoration: underline;
+}
+
+.contact-social {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact-social a {
+  color: #64748b;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.contact-social a:hover {
+  color: var(--lila-main);
+}
+
+/* FORM CARD */
+.contact-form-card {
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 28px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* INPUTS */
+.contact-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.contact-input,
+.contact-textarea {
+  background: #f8fafc;
+  border: 3px solid var(--lila-main);
+  border-radius: 999px;
+  padding: 1rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+.contact-textarea {
+  border-radius: 18px;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.25);
+}
+
+/* BUTTON */
+.contact-btn {
+  width: 100%;
+  background: var(--lima-main);
+  border: none;
+  color: #0f172a;
+  font-weight: 800;
+  padding: 1rem;
+  border-radius: 999px;
+  transition: all 0.25s ease;
+}
+
+.contact-btn:hover {
+  background: #6be600;
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(124, 255, 0, 0.35);
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom-premium {
+  margin-top: 6rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-bottom-premium p {
+  font-size: 0.8rem;
+  color: #334155;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-links a {
+  font-size: 0.8rem;
+  color: #334155;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--lila-main);
+}
+
+
+/* =========================
+   CONTACT + FOOTER FULL WIDTH
+========================= */
+.contact-footer-wrapper {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: linear-gradient(135deg,
+      #e9d5ff 0%,
+      #d8b4fe 45%,
+      #c7d2fe 100%);
+}
+
+
+/* =========================
+   SECCIONES EDITORIALES UX
+========================= */
+
+.section-editorial {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.section-editorial h2 {
+  margin-bottom: 2.5rem;
+}
+
+.section-editorial > .container > p,
+.section-editorial .text-muted {
+  margin-bottom: 3.5rem;
+  max-width: 760px;
+}
+
+
+.section-editorial h2 {
+  font-size: clamp(3rem, 6vw, 3.8rem);
+}
+
+/* =========================
+   SISTEMA GLOBAL DE BOTONES
+========================= */
+
+/* Botón principal (reemplaza btn-primary y btn-dark) */
+.btn,
+.btn-primary,
+.btn-dark {
+  background-color: var(--lima-main) !important;
+  border-color: var(--lima-main) !important;
+  color: #0f172a !important;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.25s ease;
+}
+
+.btn:hover,
+.btn-primary:hover,
+.btn-dark:hover {
+  background-color: #6be600 !important;
+  border-color: #6be600 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(124, 255, 0, 0.35);
+}
+
+
+.btn-outline-dark,
+.btn-outline-light {
+  border: 2px solid;
+  color: var(--lila-main);
+  background: transparent !important;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.btn-outline-dark:hover,
+.btn-outline-light:hover {
+  background: var(--lima-main) !important;
+  color: #0f172a !important;
+  box-shadow: 0 10px 25px rgba(124, 255, 0, 0.3);
+}
+
+
+/* =========================
+   SOCIAL LINKS HERO
+========================= */
+
+.hero-social {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.hero-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: #111111;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  opacity: 0.9;
+
+  transition: all 0.25s ease;
+}
+
+.hero-social i {
+  font-size: 1.2rem;
+}
+
+.hero-social a:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  color: var(--lila-main);
+}
