@@ -347,6 +347,7 @@ h4 {
 #formacion .card:hover h5 {
   color: var(--lila-main);
 }
+
 /* =========================
    CARDS DE SKILLS (acento lila)
 ========================= */
@@ -446,7 +447,7 @@ h4 {
       #e9d5ff 0%,
       #d8b4fe 45%,
       #c7d2fe 100%);
-  padding: 8rem 0 4rem;
+  padding: 6rem 0 4rem;
 }
 
 
@@ -602,7 +603,7 @@ h4 {
   margin-bottom: 2.5rem;
 }
 
-.section-editorial > .container > p,
+.section-editorial>.container>p,
 .section-editorial .text-muted {
   margin-bottom: 3.5rem;
   max-width: 760px;
@@ -720,6 +721,7 @@ h4 {
   .contact-text {
     font-size: 1rem;
   }
+
   .footer-bottom-premium {
     margin-top: 3rem;
     padding: 1.5rem 1rem 2rem;
@@ -733,7 +735,7 @@ h4 {
     gap: 1.5rem;
   }
 
-  .contact-premium .row > div:first-child {
+  .contact-premium .row>div:first-child {
     text-align: center;
   }
 
