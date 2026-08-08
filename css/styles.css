@@ -693,4 +693,12 @@ h4 {
   .footer-links {
     gap: 1.5rem;
   }
+
+  .contact-premium .row > div:first-child {
+    text-align: center;
+  }
+
+  .contact-social {
+    justify-content: center;
+  }
 }
