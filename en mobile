@@ -1,0 +1,40 @@
+[1mdiff --git a/css/styles.css b/css/styles.css[m
+[1mindex 938cb80..53c2442 100644[m
+[1m--- a/css/styles.css[m
+[1m+++ b/css/styles.css[m
+[36m@@ -651,3 +651,34 @@[m [mh4 {[m
+   transform: translateY(-2px);[m
+   color: var(--lila-main);[m
+ }[m
+[32m+[m[41m[m
+[32m+[m[32m/* =========================[m[41m[m
+[32m+[m[32m   AJUSTES MOBILE (menos padding y titulos mas chicos)[m[41m[m
+[32m+[m[32m========================= */[m[41m[m
+[32m+[m[32m@media (max-width: 767.98px) {[m[41m[m
+[32m+[m[32m  h1 {[m[41m[m
+[32m+[m[32m    font-size: 2.25rem;[m[41m[m
+[32m+[m[32m  }[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m  h2 {[m[41m[m
+[32m+[m[32m    font-size: 2rem;[m[41m[m
+[32m+[m[32m    margin-bottom: 1.25rem;[m[41m[m
+[32m+[m[32m  }[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m  .section-editorial {[m[41m[m
+[32m+[m[32m    padding-top: 3rem;[m[41m[m
+[32m+[m[32m    padding-bottom: 3rem;[m[41m[m
+[32m+[m[32m  }[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m  .section-editorial h2 {[m[41m[m
+[32m+[m[32m    font-size: 2.1rem;[m[41m[m
+[32m+[m[32m  }[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m  .contact-premium {[m[41m[m
+[32m+[m[32m    padding: 3.5rem 0 2.5rem;[m[41m[m
+[32m+[m[32m  }[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m  .contact-text {[m[41m[m
+[32m+[m[32m    font-size: 1rem;[m[41m[m
+[32m+[m[32m  }[m[41m[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
