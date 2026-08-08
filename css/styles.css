@@ -347,6 +347,45 @@ h4 {
 #formacion .card:hover h5 {
   color: var(--lila-main);
 }
+/* =========================
+   CARDS DE SKILLS (acento lila)
+========================= */
+#skills .card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+#skills .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--lila-main);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+#skills .card:hover::before {
+  transform: scaleX(1);
+}
+
+#skills .card:hover {
+  border-color: rgba(139, 92, 246, 0.4);
+  box-shadow: 0 20px 45px rgba(139, 92, 246, 0.18), 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+#skills .card h5 {
+  transition: color 0.25s ease;
+}
+
+#skills .card:hover h5 {
+  color: var(--lila-main);
+}
 
 /* =========================
    CARDS DE PROYECTOS
