@@ -651,3 +651,34 @@ h4 {
   transform: translateY(-2px);
   color: var(--lila-main);
 }
+
+/* =========================
+   AJUSTES MOBILE (menos padding y titulos mas chicos)
+========================= */
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .section-editorial {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .section-editorial h2 {
+    font-size: 2.1rem;
+  }
+
+  .contact-premium {
+    padding: 3.5rem 0 2.5rem;
+  }
+
+  .contact-text {
+    font-size: 1rem;
+  }
+}
