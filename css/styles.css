@@ -259,6 +259,43 @@ h4 {
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
 }
 
+#sobre-mi .mini-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+#sobre-mi .mini-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--lima-main);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+#sobre-mi .mini-card:hover::before {
+  transform: scaleX(1);
+}
+
+#sobre-mi .mini-card:hover {
+  border-color: rgba(124, 255, 0, 0.4);
+  box-shadow: 0 20px 45px rgba(124, 255, 0, 0.18), 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+#sobre-mi .mini-card h3 {
+  transition: color 0.25s ease;
+}
+
+
+#sobre-mi .mini-card:hover h3 {
+  color: var(--lila-main);
+}
 /* =========================
    CARDS DE CERTIFICACIONES (acento lima)
 ========================= */
